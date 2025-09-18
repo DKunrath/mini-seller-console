@@ -1,0 +1,1002 @@
+[
+  {
+    "id": "lead-001",
+    "name": "John Smith",
+    "company": "TechCorp Inc",
+    "email": "john.smith@techcorp.com",
+    "source": "Website",
+    "score": 85,
+    "status": "new",
+    "createdAt": "2024-01-15T10:30:00Z"
+  },
+  {
+    "id": "lead-002",
+    "name": "Sarah Johnson",
+    "company": "Digital Solutions",
+    "email": "sarah.j@digitalsol.com",
+    "source": "LinkedIn",
+    "score": 92,
+    "status": "contacted",
+    "createdAt": "2024-01-14T14:20:00Z"
+  },
+  {
+    "id": "lead-003",
+    "name": "Michael Brown",
+    "company": "StartupXYZ",
+    "email": "mike@startupxyz.io",
+    "source": "Referral",
+    "score": 78,
+    "status": "qualified",
+    "createdAt": "2024-01-13T09:15:00Z"
+  },
+  {
+    "id": "lead-004",
+    "name": "Emily Davis",
+    "company": "Enterprise Corp",
+    "email": "emily.davis@enterprise.com",
+    "source": "Cold Email",
+    "score": 65,
+    "status": "new",
+    "createdAt": "2024-01-12T16:45:00Z"
+  },
+  {
+    "id": "lead-005",
+    "name": "David Wilson",
+    "company": "Innovation Labs",
+    "email": "d.wilson@innovlabs.com",
+    "source": "Trade Show",
+    "score": 88,
+    "status": "contacted",
+    "createdAt": "2024-01-11T11:30:00Z"
+  },
+  {
+    "id": "lead-006",
+    "name": "Lisa Anderson",
+    "company": "Global Systems",
+    "email": "lisa.a@globalsys.com",
+    "source": "Website",
+    "score": 73,
+    "status": "new",
+    "createdAt": "2024-01-10T13:20:00Z"
+  },
+  {
+    "id": "lead-007",
+    "name": "Robert Taylor",
+    "company": "Future Tech",
+    "email": "robert.taylor@futuretech.com",
+    "source": "LinkedIn",
+    "score": 95,
+    "status": "qualified",
+    "createdAt": "2024-01-09T08:45:00Z"
+  },
+  {
+    "id": "lead-008",
+    "name": "Jennifer Martinez",
+    "company": "Cloud Dynamics",
+    "email": "j.martinez@clouddyn.com",
+    "source": "Referral",
+    "score": 82,
+    "status": "contacted",
+    "createdAt": "2024-01-08T15:10:00Z"
+  },
+  {
+    "id": "lead-009",
+    "name": "Christopher Lee",
+    "company": "Data Insights",
+    "email": "chris.lee@datainsights.com",
+    "source": "Cold Email",
+    "score": 70,
+    "status": "new",
+    "createdAt": "2024-01-07T12:30:00Z"
+  },
+  {
+    "id": "lead-010",
+    "name": "Amanda White",
+    "company": "Smart Solutions",
+    "email": "amanda.white@smartsol.com",
+    "source": "Trade Show",
+    "score": 87,
+    "status": "qualified",
+    "createdAt": "2024-01-06T10:15:00Z"
+  },
+  {
+    "id": "lead-011",
+    "name": "Thomas Garcia",
+    "company": "NextGen Ventures",
+    "email": "thomas.garcia@nextgen.com",
+    "source": "Website",
+    "score": 76,
+    "status": "new",
+    "createdAt": "2024-01-05T14:25:00Z"
+  },
+  {
+    "id": "lead-012",
+    "name": "Rebecca Johnson",
+    "company": "Quantum Labs",
+    "email": "rebecca.j@quantumlabs.com",
+    "source": "LinkedIn",
+    "score": 89,
+    "status": "contacted",
+    "createdAt": "2024-01-04T09:40:00Z"
+  },
+  {
+    "id": "lead-013",
+    "name": "Kevin Rodriguez",
+    "company": "Cyber Security Inc",
+    "email": "kevin.rodriguez@cybersec.com",
+    "source": "Referral",
+    "score": 91,
+    "status": "qualified",
+    "createdAt": "2024-01-03T16:20:00Z"
+  },
+  {
+    "id": "lead-014",
+    "name": "Michelle Thompson",
+    "company": "AI Revolution",
+    "email": "michelle.t@airev.com",
+    "source": "Cold Email",
+    "score": 68,
+    "status": "new",
+    "createdAt": "2024-01-02T11:55:00Z"
+  },
+  {
+    "id": "lead-015",
+    "name": "Daniel Harris",
+    "company": "BlockChain Dynamics",
+    "email": "daniel.harris@blockchain.com",
+    "source": "Trade Show",
+    "score": 84,
+    "status": "contacted",
+    "createdAt": "2024-01-01T13:30:00Z"
+  },
+  {
+    "id": "lead-016",
+    "name": "Rachel Clark",
+    "company": "IoT Solutions",
+    "email": "rachel.clark@iotsol.com",
+    "source": "Website",
+    "score": 77,
+    "status": "new",
+    "createdAt": "2023-12-31T08:15:00Z"
+  },
+  {
+    "id": "lead-017",
+    "name": "Steven Lewis",
+    "company": "Machine Learning Corp",
+    "email": "steven.lewis@mlcorp.com",
+    "source": "LinkedIn",
+    "score": 93,
+    "status": "qualified",
+    "createdAt": "2023-12-30T15:45:00Z"
+  },
+  {
+    "id": "lead-018",
+    "name": "Angela Walker",
+    "company": "Digital Transformation",
+    "email": "angela.walker@digitrans.com",
+    "source": "Referral",
+    "score": 81,
+    "status": "contacted",
+    "createdAt": "2023-12-29T12:20:00Z"
+  },
+  {
+    "id": "lead-019",
+    "name": "Mark Hall",
+    "company": "Cloud Computing Ltd",
+    "email": "mark.hall@cloudcomp.com",
+    "source": "Cold Email",
+    "score": 72,
+    "status": "new",
+    "createdAt": "2023-12-28T10:35:00Z"
+  },
+  {
+    "id": "lead-020",
+    "name": "Laura Allen",
+    "company": "Data Analytics Pro",
+    "email": "laura.allen@dataanalytic.com",
+    "source": "Trade Show",
+    "score": 86,
+    "status": "qualified",
+    "createdAt": "2023-12-27T14:50:00Z"
+  },
+  {
+    "id": "lead-021",
+    "name": "Jason Young",
+    "company": "Virtual Reality Systems",
+    "email": "jason.young@vrsys.com",
+    "source": "Website",
+    "score": 79,
+    "status": "contacted",
+    "createdAt": "2023-12-26T09:25:00Z"
+  },
+  {
+    "id": "lead-022",
+    "name": "Nicole King",
+    "company": "FinTech Innovations",
+    "email": "nicole.king@fintech.com",
+    "source": "LinkedIn",
+    "score": 88,
+    "status": "new",
+    "createdAt": "2023-12-25T16:10:00Z"
+  },
+  {
+    "id": "lead-023",
+    "name": "Brandon Wright",
+    "company": "Robotics Engineering",
+    "email": "brandon.wright@robotics.com",
+    "source": "Referral",
+    "score": 90,
+    "status": "qualified",
+    "createdAt": "2023-12-24T11:40:00Z"
+  },
+  {
+    "id": "lead-024",
+    "name": "Christine Lopez",
+    "company": "Augmented Reality Co",
+    "email": "christine.lopez@arco.com",
+    "source": "Cold Email",
+    "score": 74,
+    "status": "contacted",
+    "createdAt": "2023-12-23T13:15:00Z"
+  },
+  {
+    "id": "lead-025",
+    "name": "Anthony Hill",
+    "company": "Green Energy Tech",
+    "email": "anthony.hill@greentech.com",
+    "source": "Trade Show",
+    "score": 83,
+    "status": "new",
+    "createdAt": "2023-12-22T08:55:00Z"
+  },
+  {
+    "id": "lead-026",
+    "name": "Stephanie Scott",
+    "company": "Renewable Solutions",
+    "email": "stephanie.scott@renewable.com",
+    "source": "Website",
+    "score": 75,
+    "status": "qualified",
+    "createdAt": "2023-12-21T15:30:00Z"
+  },
+  {
+    "id": "lead-027",
+    "name": "Gregory Green",
+    "company": "Sustainable Tech",
+    "email": "gregory.green@sustaintech.com",
+    "source": "LinkedIn",
+    "score": 87,
+    "status": "contacted",
+    "createdAt": "2023-12-20T12:45:00Z"
+  },
+  {
+    "id": "lead-028",
+    "name": "Sandra Adams",
+    "company": "EdTech Solutions",
+    "email": "sandra.adams@edtech.com",
+    "source": "Referral",
+    "score": 80,
+    "status": "new",
+    "createdAt": "2023-12-19T10:20:00Z"
+  },
+  {
+    "id": "lead-029",
+    "name": "Timothy Baker",
+    "company": "HealthTech Innovations",
+    "email": "timothy.baker@healthtech.com",
+    "source": "Cold Email",
+    "score": 71,
+    "status": "contacted",
+    "createdAt": "2023-12-18T14:35:00Z"
+  },
+  {
+    "id": "lead-030",
+    "name": "Melissa Gonzalez",
+    "company": "MedTech Systems",
+    "email": "melissa.gonzalez@medtech.com",
+    "source": "Trade Show",
+    "score": 85,
+    "status": "qualified",
+    "createdAt": "2023-12-17T09:50:00Z"
+  },
+  {
+    "id": "lead-031",
+    "name": "Richard Nelson",
+    "company": "Aerospace Dynamics",
+    "email": "richard.nelson@aerospace.com",
+    "source": "Website",
+    "score": 78,
+    "status": "new",
+    "createdAt": "2023-12-16T16:25:00Z"
+  },
+  {
+    "id": "lead-032",
+    "name": "Kimberly Carter",
+    "company": "Space Technology",
+    "email": "kimberly.carter@spacetech.com",
+    "source": "LinkedIn",
+    "score": 92,
+    "status": "contacted",
+    "createdAt": "2023-12-15T11:15:00Z"
+  },
+  {
+    "id": "lead-033",
+    "name": "Jeffrey Mitchell",
+    "company": "Automotive Innovation",
+    "email": "jeffrey.mitchell@autoinno.com",
+    "source": "Referral",
+    "score": 84,
+    "status": "qualified",
+    "createdAt": "2023-12-14T13:40:00Z"
+  },
+  {
+    "id": "lead-034",
+    "name": "Donna Perez",
+    "company": "Electric Vehicles Inc",
+    "email": "donna.perez@evehicles.com",
+    "source": "Cold Email",
+    "score": 69,
+    "status": "new",
+    "createdAt": "2023-12-13T08:30:00Z"
+  },
+  {
+    "id": "lead-035",
+    "name": "Patrick Roberts",
+    "company": "Smart Manufacturing",
+    "email": "patrick.roberts@smartmanuf.com",
+    "source": "Trade Show",
+    "score": 86,
+    "status": "contacted",
+    "createdAt": "2023-12-12T15:05:00Z"
+  },
+  {
+    "id": "lead-036",
+    "name": "Barbara Turner",
+    "company": "Industrial IoT",
+    "email": "barbara.turner@iiot.com",
+    "source": "Website",
+    "score": 77,
+    "status": "qualified",
+    "createdAt": "2023-12-11T12:20:00Z"
+  },
+  {
+    "id": "lead-037",
+    "name": "Ryan Phillips",
+    "company": "5G Networks",
+    "email": "ryan.phillips@5gnet.com",
+    "source": "LinkedIn",
+    "score": 89,
+    "status": "new",
+    "createdAt": "2023-12-10T09:45:00Z"
+  },
+  {
+    "id": "lead-038",
+    "name": "Cynthia Campbell",
+    "company": "Telecom Solutions",
+    "email": "cynthia.campbell@telecom.com",
+    "source": "Referral",
+    "score": 82,
+    "status": "contacted",
+    "createdAt": "2023-12-09T14:55:00Z"
+  },
+  {
+    "id": "lead-039",
+    "name": "Jeremy Parker",
+    "company": "Network Security",
+    "email": "jeremy.parker@netsec.com",
+    "source": "Cold Email",
+    "score": 73,
+    "status": "qualified",
+    "createdAt": "2023-12-08T11:30:00Z"
+  },
+  {
+    "id": "lead-040",
+    "name": "Carolyn Evans",
+    "company": "Quantum Computing",
+    "email": "carolyn.evans@quantum.com",
+    "source": "Trade Show",
+    "score": 94,
+    "status": "new",
+    "createdAt": "2023-12-07T16:15:00Z"
+  },
+  {
+    "id": "lead-041",
+    "name": "Scott Edwards",
+    "company": "Nano Technology",
+    "email": "scott.edwards@nanotech.com",
+    "source": "Website",
+    "score": 81,
+    "status": "contacted",
+    "createdAt": "2023-12-06T10:40:00Z"
+  },
+  {
+    "id": "lead-042",
+    "name": "Helen Collins",
+    "company": "Biotech Research",
+    "email": "helen.collins@biotech.com",
+    "source": "LinkedIn",
+    "score": 88,
+    "status": "qualified",
+    "createdAt": "2023-12-05T13:25:00Z"
+  },
+  {
+    "id": "lead-043",
+    "name": "Carl Stewart",
+    "company": "Gene Therapy Co",
+    "email": "carl.stewart@genetherapy.com",
+    "source": "Referral",
+    "score": 85,
+    "status": "new",
+    "createdAt": "2023-12-04T08:50:00Z"
+  },
+  {
+    "id": "lead-044",
+    "name": "Gloria Sanchez",
+    "company": "Pharmaceutical Tech",
+    "email": "gloria.sanchez@pharmatech.com",
+    "source": "Cold Email",
+    "score": 76,
+    "status": "contacted",
+    "createdAt": "2023-12-03T15:10:00Z"
+  },
+  {
+    "id": "lead-045",
+    "name": "Harold Morris",
+    "company": "Digital Health",
+    "email": "harold.morris@digitalhealth.com",
+    "source": "Trade Show",
+    "score": 79,
+    "status": "qualified",
+    "createdAt": "2023-12-02T12:35:00Z"
+  },
+  {
+    "id": "lead-046",
+    "name": "Diana Rogers",
+    "company": "Telemedicine Solutions",
+    "email": "diana.rogers@telemedicine.com",
+    "source": "Website",
+    "score": 83,
+    "status": "new",
+    "createdAt": "2023-12-01T09:20:00Z"
+  },
+  {
+    "id": "lead-047",
+    "name": "Arthur Reed",
+    "company": "Wellness Technology",
+    "email": "arthur.reed@welltech.com",
+    "source": "LinkedIn",
+    "score": 74,
+    "status": "contacted",
+    "createdAt": "2023-11-30T14:45:00Z"
+  },
+  {
+    "id": "lead-048",
+    "name": "Cheryl Cook",
+    "company": "Fitness Apps Inc",
+    "email": "cheryl.cook@fitnessapps.com",
+    "source": "Referral",
+    "score": 87,
+    "status": "qualified",
+    "createdAt": "2023-11-29T11:15:00Z"
+  },
+  {
+    "id": "lead-049",
+    "name": "Eugene Bailey",
+    "company": "Sports Analytics",
+    "email": "eugene.bailey@sportsanalytics.com",
+    "source": "Cold Email",
+    "score": 70,
+    "status": "new",
+    "createdAt": "2023-11-28T16:30:00Z"
+  },
+  {
+    "id": "lead-050",
+    "name": "Ruth Rivera",
+    "company": "Gaming Technology",
+    "email": "ruth.rivera@gametech.com",
+    "source": "Trade Show",
+    "score": 86,
+    "status": "contacted",
+    "createdAt": "2023-11-27T13:55:00Z"
+  },
+  {
+    "id": "lead-051",
+    "name": "Philip Ward",
+    "company": "Entertainment Systems",
+    "email": "philip.ward@entertainment.com",
+    "source": "Website",
+    "score": 78,
+    "status": "qualified",
+    "createdAt": "2023-11-26T10:25:00Z"
+  },
+  {
+    "id": "lead-052",
+    "name": "Alice Torres",
+    "company": "Streaming Solutions",
+    "email": "alice.torres@streaming.com",
+    "source": "LinkedIn",
+    "score": 82,
+    "status": "new",
+    "createdAt": "2023-11-25T15:40:00Z"
+  },
+  {
+    "id": "lead-053",
+    "name": "Wayne Peterson",
+    "company": "Content Management",
+    "email": "wayne.peterson@contentmgmt.com",
+    "source": "Referral",
+    "score": 75,
+    "status": "contacted",
+    "createdAt": "2023-11-24T12:10:00Z"
+  },
+  {
+    "id": "lead-054",
+    "name": "Janice Gray",
+    "company": "Digital Media Corp",
+    "email": "janice.gray@digitalmedia.com",
+    "source": "Cold Email",
+    "score": 80,
+    "status": "qualified",
+    "createdAt": "2023-11-23T08:35:00Z"
+  },
+  {
+    "id": "lead-055",
+    "name": "Gary Ramirez",
+    "company": "Social Media Tech",
+    "email": "gary.ramirez@socialmedia.com",
+    "source": "Trade Show",
+    "score": 84,
+    "status": "new",
+    "createdAt": "2023-11-22T14:20:00Z"
+  },
+  {
+    "id": "lead-056",
+    "name": "Kathryn James",
+    "company": "E-commerce Solutions",
+    "email": "kathryn.james@ecommerce.com",
+    "source": "Website",
+    "score": 89,
+    "status": "contacted",
+    "createdAt": "2023-11-21T11:45:00Z"
+  },
+  {
+    "id": "lead-057",
+    "name": "Ralph Watson",
+    "company": "Retail Technology",
+    "email": "ralph.watson@retailtech.com",
+    "source": "LinkedIn",
+    "score": 77,
+    "status": "qualified",
+    "createdAt": "2023-11-20T09:15:00Z"
+  },
+  {
+    "id": "lead-058",
+    "name": "Frances Brooks",
+    "company": "Supply Chain Tech",
+    "email": "frances.brooks@supplychain.com",
+    "source": "Referral",
+    "score": 85,
+    "status": "new",
+    "createdAt": "2023-11-19T16:50:00Z"
+  },
+  {
+    "id": "lead-059",
+    "name": "Benjamin Kelly",
+    "company": "Logistics Solutions",
+    "email": "benjamin.kelly@logistics.com",
+    "source": "Cold Email",
+    "score": 72,
+    "status": "contacted",
+    "createdAt": "2023-11-18T13:25:00Z"
+  },
+  {
+    "id": "lead-060",
+    "name": "Joan Sanders",
+    "company": "Transportation Tech",
+    "email": "joan.sanders@transport.com",
+    "source": "Trade Show",
+    "score": 81,
+    "status": "qualified",
+    "createdAt": "2023-11-17T10:40:00Z"
+  },
+  {
+    "id": "lead-061",
+    "name": "Russell Price",
+    "company": "Maritime Systems",
+    "email": "russell.price@maritime.com",
+    "source": "Website",
+    "score": 76,
+    "status": "new",
+    "createdAt": "2023-11-16T15:05:00Z"
+  },
+  {
+    "id": "lead-062",
+    "name": "Marie Bennett",
+    "company": "Aviation Technology",
+    "email": "marie.bennett@aviation.com",
+    "source": "LinkedIn",
+    "score": 88,
+    "status": "contacted",
+    "createdAt": "2023-11-15T12:30:00Z"
+  },
+  {
+    "id": "lead-063",
+    "name": "Albert Wood",
+    "company": "Rail Solutions",
+    "email": "albert.wood@railsol.com",
+    "source": "Referral",
+    "score": 83,
+    "status": "qualified",
+    "createdAt": "2023-11-14T08:55:00Z"
+  },
+  {
+    "id": "lead-064",
+    "name": "Teresa Barnes",
+    "company": "Urban Mobility",
+    "email": "teresa.barnes@urbanmobility.com",
+    "source": "Cold Email",
+    "score": 79,
+    "status": "new",
+    "createdAt": "2023-11-13T14:15:00Z"
+  },
+  {
+    "id": "lead-065",
+    "name": "Henry Ross",
+    "company": "Smart Cities Tech",
+    "email": "henry.ross@smartcities.com",
+    "source": "Trade Show",
+    "score": 90,
+    "status": "contacted",
+    "createdAt": "2023-11-12T11:20:00Z"
+  },
+  {
+    "id": "lead-066",
+    "name": "Dorothy Henderson",
+    "company": "Infrastructure Solutions",
+    "email": "dorothy.henderson@infrastructure.com",
+    "source": "Website",
+    "score": 74,
+    "status": "qualified",
+    "createdAt": "2023-11-11T16:45:00Z"
+  },
+  {
+    "id": "lead-067",
+    "name": "Willie Coleman",
+    "company": "Construction Tech",
+    "email": "willie.coleman@construction.com",
+    "source": "LinkedIn",
+    "score": 87,
+    "status": "new",
+    "createdAt": "2023-11-10T13:10:00Z"
+  },
+  {
+    "id": "lead-068",
+    "name": "Jean Jenkins",
+    "company": "Architecture Systems",
+    "email": "jean.jenkins@architecture.com",
+    "source": "Referral",
+    "score": 82,
+    "status": "contacted",
+    "createdAt": "2023-11-09T09:35:00Z"
+  },
+  {
+    "id": "lead-069",
+    "name": "Ralph Butler",
+    "company": "Engineering Solutions",
+    "email": "ralph.butler@engineering.com",
+    "source": "Cold Email",
+    "score": 75,
+    "status": "qualified",
+    "createdAt": "2023-11-08T15:50:00Z"
+  },
+  {
+    "id": "lead-070",
+    "name": "Evelyn Griffin",
+    "company": "Design Technology",
+    "email": "evelyn.griffin@designtech.com",
+    "source": "Trade Show",
+    "score": 85,
+    "status": "new",
+    "createdAt": "2023-11-07T12:25:00Z"
+  },
+  {
+    "id": "lead-071",
+    "name": "Louis Washington",
+    "company": "Material Science",
+    "email": "louis.washington@materials.com",
+    "source": "Website",
+    "score": 78,
+    "status": "contacted",
+    "createdAt": "2023-11-06T10:15:00Z"
+  },
+  {
+    "id": "lead-072",
+    "name": "Phyllis Butler",
+    "company": "Chemical Solutions",
+    "email": "phyllis.butler@chemical.com",
+    "source": "LinkedIn",
+    "score": 80,
+    "status": "qualified",
+    "createdAt": "2023-11-05T14:40:00Z"
+  },
+  {
+    "id": "lead-073",
+    "name": "Roy Simmons",
+    "company": "Environmental Tech",
+    "email": "roy.simmons@envtech.com",
+    "source": "Referral",
+    "score": 86,
+    "status": "new",
+    "createdAt": "2023-11-04T11:05:00Z"
+  },
+  {
+    "id": "lead-074",
+    "name": "Norma Foster",
+    "company": "Water Solutions",
+    "email": "norma.foster@watersol.com",
+    "source": "Cold Email",
+    "score": 73,
+    "status": "contacted",
+    "createdAt": "2023-11-03T16:30:00Z"
+  },
+  {
+    "id": "lead-075",
+    "name": "Billy Bryant",
+    "company": "Energy Storage",
+    "email": "billy.bryant@energystorage.com",
+    "source": "Trade Show",
+    "score": 89,
+    "status": "qualified",
+    "createdAt": "2023-11-02T13:55:00Z"
+  },
+  {
+    "id": "lead-076",
+    "name": "Lois Alexander",
+    "company": "Solar Technology",
+    "email": "lois.alexander@solartech.com",
+    "source": "Website",
+    "score": 77,
+    "status": "new",
+    "createdAt": "2023-11-01T08:20:00Z"
+  },
+  {
+    "id": "lead-077",
+    "name": "Bruce Russell",
+    "company": "Wind Energy Corp",
+    "email": "bruce.russell@windenergy.com",
+    "source": "LinkedIn",
+    "score": 84,
+    "status": "contacted",
+    "createdAt": "2023-10-31T15:45:00Z"
+  },
+  {
+    "id": "lead-078",
+    "name": "Judith Griffin",
+    "company": "Hydro Solutions",
+    "email": "judith.griffin@hydrosol.com",
+    "source": "Referral",
+    "score": 81,
+    "status": "qualified",
+    "createdAt": "2023-10-30T12:10:00Z"
+  },
+  {
+    "id": "lead-079",
+    "name": "Joe Diaz",
+    "company": "Geothermal Tech",
+    "email": "joe.diaz@geothermal.com",
+    "source": "Cold Email",
+    "score": 76,
+    "status": "new",
+    "createdAt": "2023-10-29T09:35:00Z"
+  },
+  {
+    "id": "lead-080",
+    "name": "Marilyn Hayes",
+    "company": "Nuclear Solutions",
+    "email": "marilyn.hayes@nuclear.com",
+    "source": "Trade Show",
+    "score": 92,
+    "status": "contacted",
+    "createdAt": "2023-10-28T14:50:00Z"
+  },
+  {
+    "id": "lead-081",
+    "name": "Gerald Myers",
+    "company": "Fusion Energy",
+    "email": "gerald.myers@fusion.com",
+    "source": "Website",
+    "score": 88,
+    "status": "qualified",
+    "createdAt": "2023-10-27T11:25:00Z"
+  },
+  {
+    "id": "lead-082",
+    "name": "Victoria Ford",
+    "company": "Battery Technology",
+    "email": "victoria.ford@battery.com",
+    "source": "LinkedIn",
+    "score": 79,
+    "status": "new",
+    "createdAt": "2023-10-26T16:15:00Z"
+  },
+  {
+    "id": "lead-083",
+    "name": "Samuel Flores",
+    "company": "Fuel Cell Systems",
+    "email": "samuel.flores@fuelcell.com",
+    "source": "Referral",
+    "score": 85,
+    "status": "contacted",
+    "createdAt": "2023-10-25T13:40:00Z"
+  },
+  {
+    "id": "lead-084",
+    "name": "Joyce Washington",
+    "company": "Smart Grid Tech",
+    "email": "joyce.washington@smartgrid.com",
+    "source": "Cold Email",
+    "score": 74,
+    "status": "qualified",
+    "createdAt": "2023-10-24T10:05:00Z"
+  },
+  {
+    "id": "lead-085",
+    "name": "Lawrence Sullivan",
+    "company": "Power Management",
+    "email": "lawrence.sullivan@powermgmt.com",
+    "source": "Trade Show",
+    "score": 83,
+    "status": "new",
+    "createdAt": "2023-10-23T15:30:00Z"
+  },
+  {
+    "id": "lead-086",
+    "name": "Katherine Perry",
+    "company": "Electrical Systems",
+    "email": "katherine.perry@electrical.com",
+    "source": "Website",
+    "score": 87,
+    "status": "contacted",
+    "createdAt": "2023-10-22T12:55:00Z"
+  },
+  {
+    "id": "lead-087",
+    "name": "Peter Powell",
+    "company": "Control Systems",
+    "email": "peter.powell@control.com",
+    "source": "LinkedIn",
+    "score": 80,
+    "status": "qualified",
+    "createdAt": "2023-10-21T08:20:00Z"
+  },
+  {
+    "id": "lead-088",
+    "name": "Virginia Long",
+    "company": "Automation Solutions",
+    "email": "virginia.long@automation.com",
+    "source": "Referral",
+    "score": 78,
+    "status": "new",
+    "createdAt": "2023-10-20T14:45:00Z"
+  },
+  {
+    "id": "lead-089",
+    "name": "Harold Patterson",
+    "company": "Process Control",
+    "email": "harold.patterson@processcontrol.com",
+    "source": "Cold Email",
+    "score": 82,
+    "status": "contacted",
+    "createdAt": "2023-10-19T11:10:00Z"
+  },
+  {
+    "id": "lead-090",
+    "name": "Doris Hughes",
+    "company": "Quality Assurance Tech",
+    "email": "doris.hughes@qatech.com",
+    "source": "Trade Show",
+    "score": 86,
+    "status": "qualified",
+    "createdAt": "2023-10-18T16:35:00Z"
+  },
+  {
+    "id": "lead-091",
+    "name": "Frank Ramirez",
+    "company": "Testing Solutions",
+    "email": "frank.ramirez@testing.com",
+    "source": "Website",
+    "score": 75,
+    "status": "new",
+    "createdAt": "2023-10-17T13:25:00Z"
+  },
+  {
+    "id": "lead-092",
+    "name": "Andrea Flores",
+    "company": "Validation Systems",
+    "email": "andrea.flores@validation.com",
+    "source": "LinkedIn",
+    "score": 89,
+    "status": "contacted",
+    "createdAt": "2023-10-16T09:50:00Z"
+  },
+  {
+    "id": "lead-093",
+    "name": "Martin Cooper",
+    "company": "Compliance Tech",
+    "email": "martin.cooper@compliance.com",
+    "source": "Referral",
+    "score": 81,
+    "status": "qualified",
+    "createdAt": "2023-10-15T15:15:00Z"
+  },
+  {
+    "id": "lead-094",
+    "name": "Jacqueline Richardson",
+    "company": "Regulatory Solutions",
+    "email": "jacqueline.richardson@regulatory.com",
+    "source": "Cold Email",
+    "score": 77,
+    "status": "new",
+    "createdAt": "2023-10-14T12:40:00Z"
+  },
+  {
+    "id": "lead-095",
+    "name": "Douglas Reed",
+    "company": "Standards Technology",
+    "email": "douglas.reed@standards.com",
+    "source": "Trade Show",
+    "score": 84,
+    "status": "contacted",
+    "createdAt": "2023-10-13T10:05:00Z"
+  },
+  {
+    "id": "lead-096",
+    "name": "Margaret Cox",
+    "company": "Certification Systems",
+    "email": "margaret.cox@certification.com",
+    "source": "Website",
+    "score": 88,
+    "status": "qualified",
+    "createdAt": "2023-10-12T14:30:00Z"
+  },
+  {
+    "id": "lead-097",
+    "name": "Roger Ward",
+    "company": "Audit Technology",
+    "email": "roger.ward@audit.com",
+    "source": "LinkedIn",
+    "score": 73,
+    "status": "new",
+    "createdAt": "2023-10-11T11:55:00Z"
+  },
+  {
+    "id": "lead-098",
+    "name": "Julie Howard",
+    "company": "Risk Management Tech",
+    "email": "julie.howard@riskmgmt.com",
+    "source": "Referral",
+    "score": 85,
+    "status": "contacted",
+    "createdAt": "2023-10-10T16:20:00Z"
+  },
+  {
+    "id": "lead-099",
+    "name": "Edward Torres",
+    "company": "Security Solutions Pro",
+    "email": "edward.torres@securitypro.com",
+    "source": "Cold Email",
+    "score": 79,
+    "status": "qualified",
+    "createdAt": "2023-10-09T13:45:00Z"
+  },
+  {
+    "id": "lead-100",
+    "name": "Martha Nguyen",
+    "company": "Data Protection Inc",
+    "email": "martha.nguyen@dataprotection.com",
+    "source": "Trade Show",
+    "score": 91,
+    "status": "new",
+    "createdAt": "2023-10-08T08:10:00Z"
+  }
+]
