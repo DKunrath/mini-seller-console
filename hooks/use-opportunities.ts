@@ -1,28 +1,19 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { useHydration } from "./use-hydration"
 import type { Opportunity, Lead } from "@/types"
 
 export function useOpportunities() {
-  const isHydrated = useHydration()
-  
-  // Initialize opportunities from localStorage if available, but only after hydration
-  const [opportunities, setOpportunities] = useState<Opportunity[]>([])
-
-  // Load opportunities from localStorage after hydration
-  useEffect(() => {
-    if (!isHydrated) return
-    
+  // Initialize opportunities from localStorage if available
+  const [opportunities, setOpportunities] = useState<Opportunity[]>(() => {
     try {
       const storedOpportunities = window.localStorage.getItem("opportunities-data")
-      if (storedOpportunities) {
-        setOpportunities(JSON.parse(storedOpportunities))
-      }
+      return storedOpportunities ? JSON.parse(storedOpportunities) : []
     } catch (error) {
       console.error("Error loading opportunities from localStorage:", error)
+      return []
     }
-  }, [isHydrated])
+  })
 
   // Save opportunities to localStorage whenever they change
   useEffect(() => {
@@ -68,19 +59,6 @@ export function useOpportunities() {
     }
   }
 
-  const deleteOpportunity = async (id: string) => {
-    try {
-      // Simulate API call
-      await new Promise((resolve) => setTimeout(resolve, 300))
-
-      setOpportunities((prev) => prev.filter((opp) => opp.id !== id))
-
-      return true
-    } catch (err) {
-      throw new Error("Failed to delete opportunity")
-    }
-  }
-
   const clearOpportunities = () => {
     setOpportunities([])
     
@@ -96,7 +74,6 @@ export function useOpportunities() {
     opportunities,
     createOpportunity,
     updateOpportunity,
-    deleteOpportunity,
     clearOpportunities,
   }
 }

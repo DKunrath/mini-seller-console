@@ -4,7 +4,6 @@ import { useState, useEffect, useMemo } from "react"
 import { useDebounce } from "./use-debounce"
 import { useLocalStorage } from "./use-local-storage"
 import { useToast } from "./use-toast"
-import { useHydration } from "./use-hydration"
 import type { Lead, LeadStatus } from "@/types"
 
 interface LeadFilters {
@@ -17,34 +16,31 @@ interface LeadFilters {
 }
 
 export function useLeads() {
-  const isHydrated = useHydration()
-  
-  // Initialize leads from localStorage if available, but only after hydration
-  const [leads, setLeads] = useState<Lead[]>([])
+  // Initialize leads from localStorage if available
+  const [leads, setLeads] = useState<Lead[]>(() => {
+    try {
+      const storedLeads = window.localStorage.getItem("leads-data")
+      return storedLeads ? JSON.parse(storedLeads) : []
+    } catch (error) {
+      console.error("Error loading leads from localStorage:", error)
+      return []
+    }
+  })
   
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
   
   // Initialize hasData based on leads length
-  const [hasData, setHasData] = useState(false)
-  
-  const { toast } = useToast()
-
-  // Load data from localStorage after hydration
-  useEffect(() => {
-    if (!isHydrated) return
-    
+  const [hasData, setHasData] = useState(() => {
     try {
       const storedLeads = window.localStorage.getItem("leads-data")
-      if (storedLeads) {
-        const parsedLeads = JSON.parse(storedLeads)
-        setLeads(parsedLeads)
-        setHasData(parsedLeads.length > 0)
-      }
+      return storedLeads ? JSON.parse(storedLeads).length > 0 : false
     } catch (error) {
-      console.error("Error loading leads from localStorage:", error)
+      return false
     }
-  }, [isHydrated])
+  })
+  
+  const { toast } = useToast()
 
   // Save leads to localStorage whenever they change
   useEffect(() => {
@@ -56,29 +52,30 @@ export function useLeads() {
     }
   }, [leads])
 
-  // Initialize filters from localStorage if available, but only after hydration
-  const [filters, setFilters] = useState<LeadFilters>({
-    searchTerm: "",
-    statusFilter: "all",
-    sortBy: "score",
-    sortOrder: "desc",
-    page: 1,
-    pageSize: 100,
-  })
-
-  // Load filters from localStorage after hydration
-  useEffect(() => {
-    if (!isHydrated) return
-    
+  // Initialize filters from localStorage if available
+  const [filters, setFilters] = useState<LeadFilters>(() => {
     try {
       const storedFilters = window.localStorage.getItem("lead-filters")
-      if (storedFilters) {
-        setFilters(JSON.parse(storedFilters))
+      return storedFilters ? JSON.parse(storedFilters) : {
+        searchTerm: "",
+        statusFilter: "all",
+        sortBy: "score",
+        sortOrder: "desc",
+        page: 1,
+        pageSize: 100,
       }
     } catch (error) {
       console.error("Error loading filters from localStorage:", error)
+      return {
+        searchTerm: "",
+        statusFilter: "all",
+        sortBy: "score",
+        sortOrder: "desc",
+        page: 1,
+        pageSize: 100,
+      }
     }
-  }, [isHydrated])
+  })
 
   // Save filters to localStorage whenever they change
   useEffect(() => {

@@ -1,33 +1,17 @@
 "use client"
 
-import { useState } from "react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
-import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger } from "@/components/ui/alert-dialog"
-import { Building, Calendar, DollarSign, TrendingUp, Trash2 } from "lucide-react"
+import { Building, Calendar, DollarSign, TrendingUp } from "lucide-react"
 import { formatDate, formatCurrency } from "@/utils/validation"
 import type { Opportunity } from "@/types"
 
 interface OpportunitiesPageProps {
   opportunities: Opportunity[]
   onUpdateOpportunity: (id: string, updates: Partial<Opportunity>) => Promise<boolean>
-  onDeleteOpportunity: (id: string) => Promise<boolean>
 }
 
-export function OpportunitiesPage({ opportunities, onDeleteOpportunity }: OpportunitiesPageProps) {
-  const [deletingId, setDeletingId] = useState<string | null>(null)
-
-  const handleDelete = async (id: string) => {
-    try {
-      setDeletingId(id)
-      await onDeleteOpportunity(id)
-    } catch (error) {
-      console.error("Failed to delete opportunity:", error)
-    } finally {
-      setDeletingId(null)
-    }
-  }
+export function OpportunitiesPage({ opportunities }: OpportunitiesPageProps) {
   const getStageColor = (stage: Opportunity["stage"]) => {
     switch (stage) {
       case "new":
@@ -131,40 +115,9 @@ export function OpportunitiesPage({ opportunities, onDeleteOpportunity }: Opport
             <CardHeader>
               <CardTitle className="flex items-center justify-between">
                 <span className="truncate">{opportunity.name}</span>
-                <div className="flex items-center gap-2">
-                  <Badge className={getStageColor(opportunity.stage)} variant="secondary">
-                    {opportunity.stage.replace("-", " ").replace(/\b\w/g, (l) => l.toUpperCase())}
-                  </Badge>
-                  <AlertDialog>
-                    <AlertDialogTrigger asChild>
-                      <Button 
-                        variant="ghost" 
-                        size="sm" 
-                        className="h-8 w-8 p-0 text-muted-foreground hover:text-destructive"
-                        disabled={deletingId === opportunity.id}
-                      >
-                        <Trash2 className="h-4 w-4" />
-                      </Button>
-                    </AlertDialogTrigger>
-                    <AlertDialogContent>
-                      <AlertDialogHeader>
-                        <AlertDialogTitle>Delete Opportunity</AlertDialogTitle>
-                        <AlertDialogDescription>
-                          Are you sure you want to delete "{opportunity.name}"? This action cannot be undone.
-                        </AlertDialogDescription>
-                      </AlertDialogHeader>
-                      <AlertDialogFooter>
-                        <AlertDialogCancel>Cancel</AlertDialogCancel>
-                        <AlertDialogAction
-                          onClick={() => handleDelete(opportunity.id)}
-                          className="bg-destructive text-destructive-foreground hover:bg-destructive/90"
-                        >
-                          Delete
-                        </AlertDialogAction>
-                      </AlertDialogFooter>
-                    </AlertDialogContent>
-                  </AlertDialog>
-                </div>
+                <Badge className={getStageColor(opportunity.stage)} variant="secondary">
+                  {opportunity.stage.replace("-", " ").replace(/\b\w/g, (l) => l.toUpperCase())}
+                </Badge>
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-3">
