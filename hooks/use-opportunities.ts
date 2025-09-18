@@ -1,10 +1,28 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import type { Opportunity, Lead } from "@/types"
 
 export function useOpportunities() {
-  const [opportunities, setOpportunities] = useState<Opportunity[]>([])
+  // Initialize opportunities from localStorage if available
+  const [opportunities, setOpportunities] = useState<Opportunity[]>(() => {
+    try {
+      const storedOpportunities = window.localStorage.getItem("opportunities-data")
+      return storedOpportunities ? JSON.parse(storedOpportunities) : []
+    } catch (error) {
+      console.error("Error loading opportunities from localStorage:", error)
+      return []
+    }
+  })
+
+  // Save opportunities to localStorage whenever they change
+  useEffect(() => {
+    try {
+      window.localStorage.setItem("opportunities-data", JSON.stringify(opportunities))
+    } catch (error) {
+      console.error("Error saving opportunities to localStorage:", error)
+    }
+  }, [opportunities])
 
   const createOpportunity = async (lead: Lead, amount?: number) => {
     try {
@@ -41,9 +59,21 @@ export function useOpportunities() {
     }
   }
 
+  const clearOpportunities = () => {
+    setOpportunities([])
+    
+    // Also clear from localStorage
+    try {
+      window.localStorage.removeItem("opportunities-data")
+    } catch (error) {
+      console.error("Error clearing opportunities from localStorage:", error)
+    }
+  }
+
   return {
     opportunities,
     createOpportunity,
     updateOpportunity,
+    clearOpportunities,
   }
 }
