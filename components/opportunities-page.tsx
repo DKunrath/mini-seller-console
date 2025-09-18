@@ -103,7 +103,7 @@ export function OpportunitiesPage({ opportunities, onDeleteOpportunity }: Opport
             <CardTitle className="text-sm font-medium">Total Opportunities</CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold">{opportunities.length}</div>
+            <div className="text-2xl font-bold" suppressHydrationWarning>{opportunities.length}</div>
           </CardContent>
         </Card>
         <Card>
@@ -111,7 +111,7 @@ export function OpportunitiesPage({ opportunities, onDeleteOpportunity }: Opport
             <CardTitle className="text-sm font-medium">Total Value</CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold">{formatCurrency(totalValue)}</div>
+            <div className="text-2xl font-bold" suppressHydrationWarning>{formatCurrency(totalValue)}</div>
           </CardContent>
         </Card>
         <Card>
@@ -119,7 +119,7 @@ export function OpportunitiesPage({ opportunities, onDeleteOpportunity }: Opport
             <CardTitle className="text-sm font-medium">Won Opportunities</CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold">{opportunities.filter((opp) => opp.stage === "closed-won").length}</div>
+            <div className="text-2xl font-bold" suppressHydrationWarning>{opportunities.filter((opp) => opp.stage === "closed-won").length}</div>
           </CardContent>
         </Card>
       </div>
