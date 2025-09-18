@@ -195,7 +195,7 @@ export function LeadsPage({ onCreateOpportunity }: LeadsPageProps) {
             <CardTitle className="text-sm font-medium">Total Leads</CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold" suppressHydrationWarning>{totalLeads}</div>
+            <div className="text-2xl font-bold">{totalLeads}</div>
           </CardContent>
         </Card>
         <Card>
@@ -203,7 +203,7 @@ export function LeadsPage({ onCreateOpportunity }: LeadsPageProps) {
             <CardTitle className="text-sm font-medium">Filtered Results</CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold" suppressHydrationWarning>{filteredCount}</div>
+            <div className="text-2xl font-bold">{filteredCount}</div>
           </CardContent>
         </Card>
         <Card>
@@ -211,7 +211,7 @@ export function LeadsPage({ onCreateOpportunity }: LeadsPageProps) {
             <CardTitle className="text-sm font-medium">Qualified Leads</CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold" suppressHydrationWarning>{allLeads.filter((lead) => lead.status === "qualified").length}</div>
+            <div className="text-2xl font-bold">{allLeads.filter((lead) => lead.status === "qualified").length}</div>
           </CardContent>
         </Card>
       </div>

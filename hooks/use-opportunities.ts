@@ -7,21 +7,12 @@ import type { Opportunity, Lead } from "@/types"
 export function useOpportunities() {
   const isHydrated = useHydration()
   
-  // Initialize opportunities from localStorage immediately, with fallback for SSR
-  const [opportunities, setOpportunities] = useState<Opportunity[]>(() => {
-    if (typeof window === 'undefined') return []
-    try {
-      const storedOpportunities = window.localStorage.getItem("opportunities-data")
-      return storedOpportunities ? JSON.parse(storedOpportunities) : []
-    } catch (error) {
-      console.error("Error loading opportunities from localStorage:", error)
-      return []
-    }
-  })
+  // Initialize opportunities from localStorage if available, but only after hydration
+  const [opportunities, setOpportunities] = useState<Opportunity[]>([])
 
-  // Ensure opportunities are loaded after hydration if not already loaded
+  // Load opportunities from localStorage after hydration
   useEffect(() => {
-    if (!isHydrated || opportunities.length > 0) return
+    if (!isHydrated) return
     
     try {
       const storedOpportunities = window.localStorage.getItem("opportunities-data")
@@ -31,7 +22,7 @@ export function useOpportunities() {
     } catch (error) {
       console.error("Error loading opportunities from localStorage:", error)
     }
-  }, [isHydrated, opportunities.length])
+  }, [isHydrated])
 
   // Save opportunities to localStorage whenever they change
   useEffect(() => {
